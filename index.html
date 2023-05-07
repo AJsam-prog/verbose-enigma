@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Responsive Portfolio Website</title>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!---css link--->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+
+    </head>
+    <body>
+
+       <!----header design--->
+       <header>
+        <a href="#" class="logo">Tech<span>ni</span>te.</a>
+
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      
+         <div class="bx bx-menu" id="menu-icon">
+
+         </div>
+        </header> 
+     <script>const header = document.querySelector("header");
+        window.addEventListener("scroll", function() {
+            header.classList.toggle("sticky", window.scrollY > 100);
+        });
+        
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+        
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        
+        };
+        
+        window.onscroll = () => {
+            menu.classList.remove('bx-x');
+            navlist.classList.remove('open');
+        };</script>
+
+     <!----home section design--->
+     <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="two">I'm</span>
+        </div>
+        <h1>Gabriel</h1>
+        <h3>A Sattelite/Computer<span> Technician.</span></h3>
+        <p> A Technician With 5+ years experience thatt keep custumers <br>coming back for about services makes best effort</p>
+        <div class="button">
+            <a href="#" class="btn"> Say Hello</a>
+            <a href="#" class="btn2"><span><i class='bx bx-play'></i></span> Watch My Work</a>
+        </div>
+     </section>
+
+     <!----about section design--->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="C:\Users\AJ Sam\Desktop\webby\img\background.jpg" alt="My profile Picture">
+
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Innovative Sattelite Tv Technician/ Computer Engineer</h4>
+            <p>Greetings! My name is AJ Samuel, and I am a passionate satellite TV technician Computer Engineer with over 5+ years of experience in the industry. I have always been fascinated by the world of technology, and I am grateful to have a career that allows me to work with the latest and greatest in satellite TV systems.
+
+                As a technician, I take pride in delivering exceptional customer service to every client I work with. Whether I am installing a new satellite TV system, troubleshooting an issue, or providing ongoing maintenance, I strive to make the experience as smooth and hassle-free as possible. My goal is to not only meet but exceed my clients' expectations, leaving them satisfied and confident in their investment.
+                ssss
+                I am well-versed in a variety of satellite TV sysstems and technologies, and I make it a priority to stay up-to-date with the latest advancements in the industry. This allows me to provide my clients with the best possible service and ensure that their systems are always operating at peak performance.
+                
+                Outside of work, I enjoy spending time with my family and exploring the great outdoors. </p>
+
+        </div>
+        <a href="aboutpage.html" class="btn"> More About Me</a>
+     </section>
+
+     <!----service section design--->
+     <section class="services" id="services">
+        <div class="main-text">
+            <p>what I am expert In</p>
+            <h2><span>My</span> Services</h2>
+        </div>
+
+        <div class="services-content">
+            <div class="box">
+                <div class="s-icons">
+                    <i class='bx bxs-speaker'></i>
+                </div>
+                <h3>Sound system Installation</h3>
+                <p>Sound system installation involves setting up and configuring audio equipment to create a high-quality audio experience for a specific space or venue</p>
+            <a href="soundsystem.html" class="read">Read More</a>
+            </div>
+            <div class="box">
+                <div class="s-icons">
+                    <i class='bx bxs-tv'></i>
+                </div>
+                <h3>Sattelite Tv Installation---</h3>
+                <p> I am well-versed in a variety of satellite TV sysstems and technologies, and I make it a priority to stay up-to-date with the latest advancements in the industry. <br> This allows me to provide my clients with the best possible service and ensure that their systems are always operating at peak performance.</p>
+            <a href="satellitetv.html" class="read">Read More</a>
+            </div>
+            <div class="box">
+                <div class="s-icons">
+                    <i class='bx bx-laptop'></i>
+                </div>
+                <h3>Computer Engineering---</h3>
+                <p> I am well-versed in a variety of computer sysstems and technologies, and I make it a priority to stay up-to-date with the latest advancements in the industry. <br> This allows me to provide my clients with the best possible service and ensure that their systems are always operating at peak performance.</p>
+            <a href="engineering.html" class="read">Read More</a>
+            </div>
+
+        </div>
+
+     </section>
+
+     <!----Portfolio section design--->
+     <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <p>Portfolio</p>
+            <h2><span>My latest</span> Project</h2>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="https://media.gettyimages.com/id/639322776/photo/senior-resource-technician-mr-john-hetherington-adjusts-the-transmitter-on-the-roof-of-kirkby.jpg?s=612x612&w=0&k=20&c=JiiKncfDBnwSV4bmDt7bSDlAjlk6d1Y8wO_eNwWbDiM=" alt="">
+                <div class="layer">
+                    <h5>Satallite mounting</h5>
+                    <p> check out 10 best design updates for the top we design and development companies</p>
+                    <a href="#"> <i class='bx bx-link-external'></i></a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="https://media.gettyimages.com/id/639322776/photo/senior-resource-technician-mr-john-hetherington-adjusts-the-transmitter-on-the-roof-of-kirkby.jpg?s=612x612&w=0&k=20&c=JiiKncfDBnwSV4bmDt7bSDlAjlk6d1Y8wO_eNwWbDiM=" alt="">
+                <div class="layer">
+                    <h5>Satallite mounting</h5>
+                    <p> check out 10 best design updates for the top we design and development companies</p>
+                    <a href="#"> <i class='bx bx-link-external'></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="https://media.gettyimages.com/id/639322776/photo/senior-resource-technician-mr-john-hetherington-adjusts-the-transmitter-on-the-roof-of-kirkby.jpg?s=612x612&w=0&k=20&c=JiiKncfDBnwSV4bmDt7bSDlAjlk6d1Y8wO_eNwWbDiM=" alt="">
+                <div class="layer">
+                    <h5>Satallite mounting</h5>
+                    <p> check out 10 best design updates for the top we design and development companies</p>
+                    <a href="#"> <i class='bx bx-link-external'></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="https://media.gettyimages.com/id/639322776/photo/senior-resource-technician-mr-john-hetherington-adjusts-the-transmitter-on-the-roof-of-kirkby.jpg?s=612x612&w=0&k=20&c=JiiKncfDBnwSV4bmDt7bSDlAjlk6d1Y8wO_eNwWbDiM=" alt="">
+                <div class="layer">
+                    <h5>Satallite mounting</h5>
+                    <p> check out 10 best design updates for the top we design and development companies</p>
+                    <a href="#"> <i class='bx bx-link-external'></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="https://media.gettyimages.com/id/639322776/photo/senior-resource-technician-mr-john-hetherington-adjusts-the-transmitter-on-the-roof-of-kirkby.jpg?s=612x612&w=0&k=20&c=JiiKncfDBnwSV4bmDt7bSDlAjlk6d1Y8wO_eNwWbDiM=" alt="">
+                <div class="layer">
+                    <h5>Satallite mounting</h5>
+                    <p> check out 10 best design updates for the top we design and development companies</p>
+                    <a href="#"> <i class='bx bx-link-external'></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="https://media.gettyimages.com/id/639322776/photo/senior-resource-technician-mr-john-hetherington-adjusts-the-transmitter-on-the-roof-of-kirkby.jpg?s=612x612&w=0&k=20&c=JiiKncfDBnwSV4bmDt7bSDlAjlk6d1Y8wO_eNwWbDiM=" alt="">
+                <div class="layer">
+                    <h5>Satallite mounting</h5>
+                    <p> check out 10 best design updates for the top we design and development companies</p>
+                    <a href="#"> <i class='bx bx-link-external'></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="https://media.gettyimages.com/id/639322776/photo/senior-resource-technician-mr-john-hetherington-adjusts-the-transmitter-on-the-roof-of-kirkby.jpg?s=612x612&w=0&k=20&c=JiiKncfDBnwSV4bmDt7bSDlAjlk6d1Y8wO_eNwWbDiM=" alt="">
+                <div class="layer">
+                    <h5>Satallite mounting</h5>
+                    <p> check out 10 best design updates for the top we design and development companies</p>
+                    <a href="#"> <i class='bx bx-link-external'></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+     <!----contact section design--->
+     <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>If you have any project in your mind</h4>
+            <p> I am Sattelite technitaian and computer engineer- making better views for customers at affordable prices</p>
+            <div class="list">
+                <li><a href="#">08061638186</a></li>
+                <li><a href="#">iamajsam@gmail.com</a></li>
+                <li><a href="#">link share & subscribe</a></li>
+            </div>
+            <div class="contact-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twiter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="name" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email Address">
+                    <input type="" placeholder="Your Mobile Number" required>
+                    <textarea name="" id="" cols="35" rows="10" placeholder="How Can I help you" required></textarea>
+                    <input type="submit" value="Send Message" class="submit" required>
+    
+                </form>
+    
+            </div>
+ 
+        </div>
+
+     </section>
+
+        <!----end section design--->
+
+        <section class="end">
+            <div class="last-text">
+                <p>Cpoyright @2023 by Gabriel Samuel All Rights Reserved.</p>
+
+            </div>
+            <div class="top">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+
+            </div>
+
+        </section>
+
+     
+
+
+        <!---custum js link--->
+        <script type="text/javascript" src="jsscript.js"></script>
+        
+    </body>
+</html>
